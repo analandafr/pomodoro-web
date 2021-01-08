@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+}
+
+.caixa {
+    position: relative;
+    width: 100%;
+}
+
+#circulo {
+    width: 250px;
+    height: 250px;
+    border:3px solid #801212;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.timers {
+    display: inline-block;
+    width: 50px 50px;
+    position: relative;
+    top: -5px;
+    left: 15%;
+    padding: 30px 0;
+    margin: 50px auto;
+    color: white;
+    font-size: 65px;
+}
+
+.b-timer {
+    padding: 1px;
+    width: 100%;
+}
+
+#start, #intervalo, #pause, #rein {
+    text-decoration: none;
+    width: 10%;
+    padding: 10px 0;
+    position: relative;
+    top: -10px ;
+    left: 29%;
+    background: #801212;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+#customizar {
+    text-decoration: none;
+    width: 25%;
+    padding: 10px 0;
+    position: relative;
+    top: -10px ;
+    left: 37%;
+    background: #801212;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+#custom {
+    padding: 3px 3px;
+    width: 55px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+#opcao {
+    padding: 3px 3px;
+    width: 27%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+.credits {
+
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin: 2em 0;
+}
+
+#git {
+    color: rgba(70, 70, 70, 0.616);
+    text-decoration: none;
+}
+
+#git:hover {
+    color: #801212;
+    text-decoration: underline;
+}
+
+.copyright {
+    padding: 1px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    margin: 2em 0;
+}
