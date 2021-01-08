@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> YourPomodoro </title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="pomodoro-estilo.css">
+
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="YourPomodoro.png" alt="Logo YourPomodoro"></h1>
+        </div>
+    </header>
+
+    <div id="circulo">
+        <p id="tr-min" class="timers">25</p> 
+        <p id="ponto" class="timers">:</p> 
+        <p id="ts-seg" class="timers">00</p>
+    </div>
+    
+    <div class="b-timer">
+        <p>
+            <button id="start"> Começar </button>
+            <button id="intervalo"> Intervalo </button>
+            <button id="pause"> Pausar </button>
+            <button id="rein"> Reiniciar </button>
+        </p>
+        <p>
+            <button id="customizar">
+                <label for="custom"> Customizar tempo: </label>
+                <input type="number" id="custom" value="0" min="0" max="100000000" >
+                <select id="opcao">  
+                    <option value="minutes"> Minutos </option>
+                    <option value="seconds"> Segundos </option>
+                    <option value="hours"> Horas </option>
+                </select>
+            </button>
+        </p>
+    </div>
+
+    <div class="credits">
+        Created by Nalanda França -
+        <a id="git" href="https://github.com/analandafr"> GitHub </a> 
+    </div>
+
+    <footer>
+        <p class="copyright"> &copy; Copyright YourPomodoro - 2020 </p>
+    </footer>
+    <script src="pomodoro-back.js"></script>
+</body>
+</html>
