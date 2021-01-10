@@ -11,46 +11,53 @@
 
 </head>
 <body>
-    <header>
-        <div class="caixa">
-            <h1><img src="YourPomodoro.png" alt="Logo YourPomodoro"></h1>
-        </div>
-    </header>
+    <div class="container">
+        <header>
+            <div class="caixa-logo">
+                <h1><img src="YourPomodoro.png" alt="Logo YourPomodoro"></h1>
+            </div>
+        </header>
 
-    <div id="circulo">
-        <p id="tr-min" class="timers">25</p> 
-        <p id="ponto" class="timers">:</p> 
-        <p id="ts-seg" class="timers">00</p>
+        <div class="conteudo">
+            <p>
+                <div id="circulo"><span id="timer"></span></div>
+                <button id="btn-start" class="buttons">Começar</button>
+                <button id="btn-pause" class="buttons">Pausar</button>
+                <button id="btn-reset" class="buttons">Reiniciar</button>
+            </p>
+            <p>
+                <button id="btn-pomodoro" class="buttons">Timer</button>
+                <button id="btn-intervalo" class="buttons">Descanso de 5 minutos</button>
+                <button id="btn-intervalo2" class="buttons"> Descanso de 10 minutos</button>
+            </p>
+            <p>
+                <button id="btn-customz" class="buttons">
+                    <label for="customz">Tempo Customizado:</label>
+                    <input type="number" id="customz" value="1" min="1" max="1000000000">
+                </button>
+
+                <div class="selecionar-audio">
+                    Tipos de Alarme:
+                    <div id="audios">
+                      <label for="selecionar-a"></label>
+                      <select id="selecionar-a">
+                        <option value="alarme-sony">Sony</option>
+                        <option value="alarme-mario">Super Mario</option>
+                        <option value="alarme-notif">Notificação</option>
+                      </select>
+                      <label for="volume_a" id="Volume_a"></label>
+                      <input type="range" id="volume_a" value="50" min="0" max="100">
+                    </div>
+                </div>
+            </p>
+        </div>
+
+        <span id="Rpomodoros"></span>
+
     </div>
     
-    <div class="b-timer">
-        <p>
-            <button id="start"> Começar </button>
-            <button id="intervalo"> Intervalo </button>
-            <button id="pause"> Pausar </button>
-            <button id="rein"> Reiniciar </button>
-        </p>
-        <p>
-            <button id="customizar">
-                <label for="custom"> Customizar tempo: </label>
-                <input type="number" id="custom" value="0" min="0" max="100000000" >
-                <select id="opcao">  
-                    <option value="minutes"> Minutos </option>
-                    <option value="seconds"> Segundos </option>
-                    <option value="hours"> Horas </option>
-                </select>
-            </button>
-        </p>
-    </div>
-
-    <div class="credits">
-        Created by Nalanda França -
-        <a id="git" href="https://github.com/analandafr"> GitHub </a> 
-    </div>
-
-    <footer>
-        <p class="copyright"> &copy; Copyright YourPomodoro - 2020 </p>
-    </footer>
-    <script src="pomodoro-back.js"></script>
+    <audio id="alarme-sony"><source src="sound-sony.mp3" type="audio"></audio>
+    <audio id="alarme-mario"><source src="sound-mario.mp3" type="audio"></audio>
+    <audio id="alarme-notif"><source src="sound-notif.mp3" type="audio"></audio>
 </body>
 </html>
