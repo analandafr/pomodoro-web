@@ -2,117 +2,127 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  text-align: center;
   background-color: black;
 }
 
-.caixa {
-    position: relative;
-    width: 100%;
-}
-
 #circulo {
-    width: 250px;
-    height: 250px;
-    border:3px solid #801212;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    margin: 50px auto;
-    padding: 50px;
+  width: 250px;
+  height: 250px;
+  border:3px solid #801212;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin: 50px auto;
+  padding: 50px;
 }
 
-.timers {
-    display: inline-block;
-    width: 50px 50px;
-    position: relative;
-    top: -5px;
-    left: 15%;
-    padding: 30px 0;
-    margin: 50px auto;
-    color: white;
-    font-size: 65px;
+.conteudo {
+	padding: 20px 0px 40px 0px;
 }
 
-.b-timer {
-    padding: 1px;
-    width: 100%;
+#timer {
+  display: inline-block;
+  position: relative;
+  top: 15px;
+  left: 1%;
+  margin: 50px auto;
+  color: white;
+  font-size: 65px;
 }
 
-#start, #intervalo, #pause, #rein {
-    text-decoration: none;
-    width: 10%;
-    padding: 10px 0;
-    position: relative;
-    top: -10px ;
-    left: 29%;
-    background: #801212;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    border: none;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    transition: 1s all;
-    cursor: pointer;
+.buttons {
+	padding: 8px 12px;
+  margin: 2px 0px;
+  font-weight: bold;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid;
 }
 
-#customizar {
-    text-decoration: none;
-    width: 25%;
-    padding: 10px 0;
-    position: relative;
-    top: -10px ;
-    left: 37%;
-    background: #801212;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    border: none;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    transition: 1s all;
-    cursor: pointer;
+#btn-start, #btn-pause, #btn-reset, #btn-intervalo, #btn-intervalo2, #btn-pomodoro {
+  text-decoration: none;
+  text-align: center;
+  width: 13%;
+  padding: 10px;
+  position: relative;
+  top: -10px ;
+  left: -1%;
+  background: #801212;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  transition: 1s all;
+  cursor: pointer;
 }
 
-#custom {
-    padding: 3px 3px;
-    width: 55px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border: none;
-    text-align: center;
+#btn-customz {
+  text-decoration: none;
+  width: 30%;
+  padding: 10px;
+  position: relative;
+  top: -17px;
+  left: -2%;
+  background: #801212;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  transition: 1s all;
+  cursor: pointer;
 }
 
-#opcao {
-    padding: 3px 3px;
-    width: 27%;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border: none;
-    text-align: center;
+#customz {
+  text-align: center;
+  border: none;
+  border-radius: 10px;
 }
 
-.credits {
+#Rpomodoros {
+  padding: 1px;
+  color: white;
+}
 
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    margin: 2em 0;
+div.selecionar-audio{
+	text-decoration: none;
+  width: 30%;
+  padding: 1px;
+  height: 57px;
+  position: relative;
+  left: 33%;
+  background: #801212;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.volume_a {
+  text-align: center;
+  margin-bottom: 5px;
+  width: 100%;
+	margin-bottom: 20px;
+}
+
+.social {
+  padding-top: 90px;
+  margin: 2em 0;
 }
 
 #git {
-    color: rgba(70, 70, 70, 0.616);
-    text-decoration: none;
+  color: rgba(70, 70, 70, 0.616);
+  text-decoration: none;
 }
 
 #git:hover {
-    color: #801212;
-    text-decoration: underline;
-}
-
-.copyright {
-    padding: 1px;
-    text-align: center;
-    color: white;
-    font-size: 13px;
-    margin: 2em 0;
+  color: #801212;
+  text-decoration: underline;
 }
