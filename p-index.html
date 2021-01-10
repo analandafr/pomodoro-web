@@ -1,63 +1,41 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> YourPomodoro </title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="p-styles.css">
-    <link rel="stylesheet" href="p-main.js">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="tab_title">YourPomodoro</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="p-styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <div class="caixa-logo">
-                <h1><img src="YourPomodoro.png" alt="Logo YourPomodoro"></h1>
-            </div>
-        </header>
-
-        <div class="conteudo">
-            <p>
-                <div id="circulo"><span id="timer"></span></div>
-                <button id="btn-start" class="buttons">Começar</button>
-                <button id="btn-pause" class="buttons">Pausar</button>
-                <button id="btn-reset" class="buttons">Reiniciar</button>
-            </p>
-            <p>
-                <button id="btn-pomodoro" class="buttons">Timer</button>
-                <button id="btn-intervalo" class="buttons">Descanso de 5 minutos</button>
-                <button id="btn-intervalo2" class="buttons"> Descanso de 10 minutos</button>
-            </p>
-            <p>
-                <button id="btn-customz" class="buttons">
-                    <label for="customz">Tempo Customizado:</label>
-                    <input type="number" id="customz" value="1" min="1" max="1000000000">
-                </button>
-
-                <div class="selecionar-audio">
-                    Tipos de Alarme:
-                    <div id="audios">
-                      <label for="selecionar-a"></label>
-                      <select id="selecionar-a">
-                        <option value="alarme-sony">Sony</option>
-                        <option value="alarme-mario">Super Mario</option>
-                        <option value="alarme-notif">Notificação</option>
-                      </select>
-                      <label for="volume_a" id="Volume_a"></label>
-                      <input type="range" id="volume_a" value="50" min="0" max="100">
-                    </div>
-                </div>
-            </p>
-        </div>
-
-        <span id="Rpomodoros"></span>
-
-    </div>
-    
-    <audio id="alarme-sony"><source src="sound-sony.mp3" type="audio"></audio>
-    <audio id="alarme-mario"><source src="sound-mario.mp3" type="audio"></audio>
-    <audio id="alarme-notif"><source src="sound-notif.mp3" type="audio"></audio>
+<div class="container">
+  <header>
+    <div id="caixa-logo">
+  	  <h1><img src="YourPomodoro.png" alt="Logo YourPomodoro"></h1>
+  	</div>
+  </header>
+  <div class="conteudo">
+    <p>
+        <div id="circulo"><span id="timer"></span></div>
+        <button id="btn_comecar" class="buttons">começar</button>
+        <button id="btn_pausar" class="buttons">pausar</button>
+    </p>
+    <p>
+        <button id="btn_pomodoro" class="buttons">timer</button>
+        <button id="btn_intervalo" class="buttons">intervalo</button>
+        <button id="btn_intervalolongo" class="buttons">intervalo longo</button>
+    </p>
+    <p>
+        <button id="btn_custom" class="buttons">
+          <label for=customz">custom:</label>
+          <input type="number" id=customz value="1" min="1" max="1000000000">
+        </button>
+    </p>
+  </div>
+</div>
+<audio id="pomodoro-alarm">
+  <source src="sound-mario.mp3" type="audio"></audio>
+<script type="javascript" src="p-main.js"></script>
 </body>
 </html>
