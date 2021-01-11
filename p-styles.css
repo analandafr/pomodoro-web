@@ -60,7 +60,8 @@ body {
 
 #btn_custom {
   text-decoration: none;
-  width: 30%;
+  text-align: center;
+  width: 10%;
   padding: 10px;
   position: relative;
   top: -17px;
@@ -77,7 +78,21 @@ body {
 }
 
 #customz {
+  text-decoration: none;
   text-align: center;
+  width: 10%;
+  padding: 10px;
+  position: relative;
+  top: -17px;
+  left: -2%;
+  background: #801212;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
   border: none;
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  transition: 1s all;
+  cursor: pointer;
+  
 }
